@@ -277,6 +277,27 @@
             font-size: 40px;
         }
     }
+    .gear-links {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    }
+
+    .gear-links a {
+    font-size: 12px;
+    color: #aaa;
+    text-decoration: none;
+    border: 1px solid #333;
+    padding: 7px 12px;
+    transition: 0.3s;
+    }
+
+    .gear-links a:hover {
+    color: white;
+    border-color: white;
+    background: #181818;
+    }
 </style>
 
 </head>
@@ -310,13 +331,26 @@
 <h2 class="section-title">Selected Work</h2>
 
 <p class="section-description">
-    A collection of photographs I've captured.<br>
-    Captured with:<br>
-    Canon R6 Mark III<br>
-    Canon RF 24-105mm f/4L<br>
-    Canon RF 45mm f/1.2<br>
-    Canon RF 100-400mm f/5.6-8
+    A collection of photographs I've captured.
 </p>
+
+<div class="gear-links">
+    <a href="https://www.usa.canon.com/shop/p/eos-r6-mark-iii" target="_blank">
+        Canon R6 Mark III
+    </a>
+
+    <a href="https://www.usa.canon.com/shop/p/rf24-105mm-f4-l-is-usm" target="_blank">
+        RF 24-105mm F4 L IS USM
+    </a>
+
+    <a href="https://www.usa.canon.com/shop/camera-lenses/mirrorless-lenses" target="_blank">
+        RF 45mm F1.2 STM
+    </a>
+
+    <a href="https://www.usa.canon.com/shop/p/rf100-400mm-f5-6-8-is-usm" target="_blank">
+        RF 100-400mm F5.6-8 IS USM
+    </a>
+</div>
 
 <div class="filters">
     <button class="filter active" onclick="filterPhotos('all', this)">All</button>
