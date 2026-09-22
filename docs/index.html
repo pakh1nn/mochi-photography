@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,6 +35,7 @@
     <h2 class="section-title">Camera Gear</h2>
 
     <div class="gear-links">
+
         <a href="https://th.canon/th/consumer/eos-r6-mark-iii/body/product" target="_blank">
             Canon R6 Mark III
         </a>
@@ -49,6 +51,7 @@
         <a href="https://th.canon/th/consumer/rf100-400mm-f-5-6-8-is-usm/main/product" target="_blank">
             RF 100-400mm F5.6-8 IS USM
         </a>
+
     </div>
 
     <br>
@@ -60,121 +63,164 @@
     </p>
 
     <div class="filters">
-        <button class="filter active" onclick="filterPhotos('all', this)">All</button>
-        <button class="filter" onclick="filterPhotos('wildlife', this)">Wildlife</button>
-        <button class="filter" onclick="filterPhotos('birds', this)">Birds</button>
-        <button class="filter" onclick="filterPhotos('landscape', this)">Landscape</button>
-        <button class="filter" onclick="filterPhotos('other', this)">Other</button>
+
+        <button class="filter active" onclick="filterPhotos('all', this)">
+            All
+        </button>
+
+        <button class="filter" onclick="filterPhotos('wildlife', this)">
+            Wildlife
+        </button>
+
+        <button class="filter" onclick="filterPhotos('birds', this)">
+            Birds
+        </button>
+
+        <button class="filter" onclick="filterPhotos('landscape', this)">
+            Landscape
+        </button>
+
+        <button class="filter" onclick="filterPhotos('other', this)">
+            Other
+        </button>
+
     </div>
 
     <div class="gallery">
 
-        <a class="photo" data-category="birds" href="photo.html?id=BB3">
+        <div class="photo" data-category="birds" onclick="openPhotoPage('BB3')">
             <img src="photos/BB3.jpg">
+
             <div class="photo-info">
                 <h3>Black-backed Dwarf Kingfisher</h3>
                 <p>Bird Photography</p>
             </div>
-        </a>
+        </div>
+
 
         <div class="photo" data-category="birds" onclick="openPhotoPage('commonkingfisher')">
             <img src="photos/commonkingfisher.jpg">
+
             <div class="photo-info">
                 <h3>Common Kingfisher</h3>
                 <p>Bird Photography</p>
             </div>
         </div>
 
+
         <div class="photo" data-category="birds" onclick="openPhotoPage('BB4')">
             <img src="photos/BB4.jpg">
+
             <div class="photo-info">
                 <h3>Black-backed Dwarf Kingfisher eating a cricket</h3>
                 <p>Bird Photography</p>
             </div>
         </div>
 
+
         <div class="photo" data-category="birds" onclick="openPhotoPage('bird2')">
             <img src="photos/bird2.jpg">
+
             <div class="photo-info">
                 <h3>Spotted Owlet</h3>
                 <p>Bird Photography</p>
             </div>
         </div>
 
+
         <div class="photo" data-category="birds" onclick="openPhotoPage('bird3')">
             <img src="photos/bird3.jpg">
+
             <div class="photo-info">
                 <h3>Olive-backed Sunbird</h3>
                 <p>Bird Photography</p>
             </div>
         </div>
 
+
         <div class="photo" data-category="birds" onclick="openPhotoPage('bird4')">
             <img src="photos/bird4.jpg">
+
             <div class="photo-info">
                 <h3>Indochinese Roller</h3>
                 <p>Bird Photography</p>
             </div>
         </div>
 
+
         <div class="photo" data-category="birds" onclick="openPhotoPage('bird5')">
             <img src="photos/bird5.jpg">
+
             <div class="photo-info">
                 <h3>Spotted Owlet taking flight</h3>
                 <p>Bird Photography</p>
             </div>
         </div>
 
+
         <div class="photo" data-category="birds" onclick="openPhotoPage('bird6')">
             <img src="photos/bird6.jpg">
+
             <div class="photo-info">
                 <h3>Spotted Peeking</h3>
                 <p>Bird Photography</p>
             </div>
         </div>
 
+
         <div class="photo" data-category="birds" onclick="openPhotoPage('bird7')">
             <img src="photos/bird7.jpg">
+
             <div class="photo-info">
                 <h3>Collared Kingfisher</h3>
                 <p>Bird Photography</p>
             </div>
         </div>
 
+
         <div class="photo" data-category="wildlife" onclick="openPhotoPage('animal1')">
             <img src="photos/animal1.jpg">
+
             <div class="photo-info">
                 <h3>Ring-tailed Lemur</h3>
                 <p>Wildlife Photography</p>
             </div>
         </div>
 
+
         <div class="photo" data-category="wildlife" onclick="openPhotoPage('animal3')">
             <img src="photos/animal3.jpg">
+
             <div class="photo-info">
                 <h3>Mongrel</h3>
                 <p>Wildlife Photography</p>
             </div>
         </div>
 
+
         <div class="photo" data-category="wildlife" onclick="openPhotoPage('animal4')">
             <img src="photos/animal4.jpg">
+
             <div class="photo-info">
                 <h3>Finlayson's Squirrel</h3>
                 <p>Wildlife Photography</p>
             </div>
         </div>
 
+
         <div class="photo" data-category="wildlife" onclick="openPhotoPage('animal5')">
             <img src="photos/animal5.jpg">
+
             <div class="photo-info">
                 <h3>Orange Tabby</h3>
                 <p>Wildlife Photography</p>
             </div>
         </div>
 
+
         <div class="photo" data-category="wildlife" onclick="openPhotoPage('animal6')">
             <img src="photos/animal6.jpg">
+
             <div class="photo-info">
                 <h3>Domestic Shorthair</h3>
                 <p>Wildlife Photography</p>
@@ -185,13 +231,19 @@
 
 </section>
 
+
 <section class="about" id="about">
 
     <div>
-        <h2>ABOUT<br>THE<br>PHOTOGRAPHER.</h2>
+        <h2>
+            ABOUT<br>
+            THE<br>
+            PHOTOGRAPHER.
+        </h2>
     </div>
 
     <div>
+
         <p>
             I'm Mochi, a photographer interested in capturing
             wildlife, birds, landscapes based in Thailand.
@@ -203,27 +255,36 @@
             ig : puukaidong<br>
             line : mochipakhin
         </p>
+
     </div>
 
 </section>
+
 
 <section class="contact" id="contact">
 
     <h2>CONTACT</h2>
 
-    <p>Feel free to get in touch.</p>
+    <p>
+        Feel free to get in touch.
+    </p>
 
-    <a href="mailto:mochipakhin@icloud.com">mochipakhin@icloud.com</a>
+    <a href="mailto:mochipakhin@icloud.com">
+        mochipakhin@icloud.com
+    </a>
 
 </section>
+
 
 <footer>
     © 2026 puukaidong Photography
 </footer>
 
+
 <script>
 
 function filterPhotos(category, button) {
+
     const photos = document.querySelectorAll(".photo");
     const buttons = document.querySelectorAll(".filter");
 
@@ -234,15 +295,30 @@ function filterPhotos(category, button) {
     button.classList.add("active");
 
     photos.forEach(photo => {
+
         if (category === "all" || photo.dataset.category === category) {
             photo.style.display = "";
         } else {
             photo.style.display = "none";
         }
+
     });
+}
+
+function openPhotoPage(id) {
+    window.location.href = "photo.html?id=" + id;
 }
 
 </script>
 
 </body>
 </html>
+```
+
+This keeps the original:
+
+```text
+Photo → onclick → openPhotoPage() → photo.html?id=BB3
+```
+
+and does **not** change your photo layout or filtering system.
