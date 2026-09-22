@@ -224,7 +224,6 @@
 <script>
 
 function filterPhotos(category, button) {
-
     const photos = document.querySelectorAll(".photo");
     const buttons = document.querySelectorAll(".filter");
 
@@ -235,18 +234,16 @@ function filterPhotos(category, button) {
     button.classList.add("active");
 
     photos.forEach(photo => {
-
         if (category === "all" || photo.dataset.category === category) {
             photo.style.display = "";
         } else {
             photo.style.display = "none";
         }
-
     });
 }
 
 function openPhotoPage(id) {
-    window.location.href = "photo.html?id=" + id;
+    window.location.href = "./photo.html?id=" + encodeURIComponent(id);
 }
 
 </script>
