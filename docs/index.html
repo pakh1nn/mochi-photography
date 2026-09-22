@@ -69,7 +69,7 @@
 
     <div class="gallery">
 
-        <div class="photo" data-category="birds" onclick="openPhoto(this)">
+        <div class="photo" data-category="birds" onclick="openPhotoPage('BB3')">
             <img src="photos/BB3.jpg">
             <div class="photo-info">
                 <h3>Black-backed Dwarf Kingfisher</h3>
@@ -77,7 +77,7 @@
             </div>
         </div>
 
-        <div class="photo" data-category="birds" onclick="openPhoto(this)">
+        <div class="photo" data-category="birds" onclick="openPhotoPage('commonkingfisher')">
             <img src="photos/commonkingfisher.jpg">
             <div class="photo-info">
                 <h3>Common Kingfisher</h3>
@@ -85,7 +85,7 @@
             </div>
         </div>
 
-        <div class="photo" data-category="birds" onclick="openPhoto(this)">
+        <div class="photo" data-category="birds" onclick="openPhotoPage('BB4')">
             <img src="photos/BB4.jpg">
             <div class="photo-info">
                 <h3>Black-backed Dwarf Kingfisher eating a cricket</h3>
@@ -93,7 +93,7 @@
             </div>
         </div>
 
-        <div class="photo" data-category="birds" onclick="openPhoto(this)">
+        <div class="photo" data-category="birds" onclick="openPhotoPage('bird2')">
             <img src="photos/bird2.jpg">
             <div class="photo-info">
                 <h3>Spotted Owlet</h3>
@@ -101,7 +101,7 @@
             </div>
         </div>
 
-        <div class="photo" data-category="birds" onclick="openPhoto(this)">
+        <div class="photo" data-category="birds" onclick="openPhotoPage('bird3')">
             <img src="photos/bird3.jpg">
             <div class="photo-info">
                 <h3>Olive-backed Sunbird</h3>
@@ -109,7 +109,7 @@
             </div>
         </div>
 
-        <div class="photo" data-category="birds" onclick="openPhoto(this)">
+        <div class="photo" data-category="birds" onclick="openPhotoPage('bird4')">
             <img src="photos/bird4.jpg">
             <div class="photo-info">
                 <h3>Indochinese Roller</h3>
@@ -117,7 +117,7 @@
             </div>
         </div>
 
-        <div class="photo" data-category="birds" onclick="openPhoto(this)">
+        <div class="photo" data-category="birds" onclick="openPhotoPage('bird5')">
             <img src="photos/bird5.jpg">
             <div class="photo-info">
                 <h3>Spotted Owlet taking flight</h3>
@@ -125,7 +125,7 @@
             </div>
         </div>
 
-        <div class="photo" data-category="birds" onclick="openPhoto(this)">
+        <div class="photo" data-category="birds" onclick="openPhotoPage('bird6')">
             <img src="photos/bird6.jpg">
             <div class="photo-info">
                 <h3>Spotted Peeking</h3>
@@ -133,7 +133,7 @@
             </div>
         </div>
 
-        <div class="photo" data-category="birds" onclick="openPhoto(this)">
+        <div class="photo" data-category="birds" onclick="openPhotoPage('bird7')">
             <img src="photos/bird7.jpg">
             <div class="photo-info">
                 <h3>Collared Kingfisher</h3>
@@ -141,7 +141,7 @@
             </div>
         </div>
 
-        <div class="photo" data-category="wildlife" onclick="openPhoto(this)">
+        <div class="photo" data-category="wildlife" onclick="openPhotoPage('animal1')">
             <img src="photos/animal1.jpg">
             <div class="photo-info">
                 <h3>Ring-tailed Lemur</h3>
@@ -149,7 +149,7 @@
             </div>
         </div>
 
-        <div class="photo" data-category="wildlife" onclick="openPhoto(this)">
+        <div class="photo" data-category="wildlife" onclick="openPhotoPage('animal3')">
             <img src="photos/animal3.jpg">
             <div class="photo-info">
                 <h3>Mongrel</h3>
@@ -157,7 +157,7 @@
             </div>
         </div>
 
-        <div class="photo" data-category="wildlife" onclick="openPhoto(this)">
+        <div class="photo" data-category="wildlife" onclick="openPhotoPage('animal4')">
             <img src="photos/animal4.jpg">
             <div class="photo-info">
                 <h3>Finlayson's Squirrel</h3>
@@ -165,7 +165,7 @@
             </div>
         </div>
 
-        <div class="photo" data-category="wildlife" onclick="openPhoto(this)">
+        <div class="photo" data-category="wildlife" onclick="openPhotoPage('animal5')">
             <img src="photos/animal5.jpg">
             <div class="photo-info">
                 <h3>Orange Tabby</h3>
@@ -173,7 +173,7 @@
             </div>
         </div>
 
-        <div class="photo" data-category="wildlife" onclick="openPhoto(this)">
+        <div class="photo" data-category="wildlife" onclick="openPhotoPage('animal6')">
             <img src="photos/animal6.jpg">
             <div class="photo-info">
                 <h3>Domestic Shorthair</h3>
@@ -221,14 +221,6 @@
     © 2026 puukaidong Photography
 </footer>
 
-<div class="lightbox" id="lightbox" onclick="closePhoto()">
-
-    <span class="close">&times;</span>
-
-    <img id="lightboxImage">
-
-</div>
-
 <script>
 
 function filterPhotos(category, button) {
@@ -253,17 +245,8 @@ function filterPhotos(category, button) {
     });
 }
 
-function openPhoto(photo) {
-
-    const image = photo.querySelector("img");
-
-    document.getElementById("lightboxImage").src = image.src;
-    document.getElementById("lightbox").style.display = "flex";
-}
-
-function closePhoto() {
-
-    document.getElementById("lightbox").style.display = "none";
+function openPhotoPage(id) {
+    window.location.href = "photo.html?id=" + id;
 }
 
 </script>
